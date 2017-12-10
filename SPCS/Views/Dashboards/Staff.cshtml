@@ -1,0 +1,30 @@
+﻿@model List<SPCS.Models.ShiftInstance>
+@{
+    ViewBag.Title = "Staff";
+}
+
+<br />
+<br />
+<div class="row animated fadeInDown">
+    <h1>Welcome, @Request.Cookies["firstname"].Value @Request.Cookies["lastname"].Value.</h1>
+</div>
+
+<div class="row animated fadeInLeft">
+    <h2>Here are your shifts for today.</h2>
+</div>
+
+<div class="row animated fadeInUp">
+    <table class="table">
+        <tr>
+            <th>
+                Client Name
+            </th>
+            <th>
+                Last Name
+            </th>
+        </tr>
+            @foreach (var item in Model)
+            {
+
+            }
+</div>
